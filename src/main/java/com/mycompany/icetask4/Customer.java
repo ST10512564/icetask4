@@ -35,10 +35,16 @@ public class Customer {
             System.out.println("Insufficient Points");
         }
     }
+     // Displays member name and current balance [cite: 27, 51]
+    public void displayStatus() {
+        System.out.println("Member information:");
+        System.out.println("Name: " + this.name);
+        System.out.println("Points: " + this.points);
+    }
    
 }
         
         
         
-    }
-}
+    
+
