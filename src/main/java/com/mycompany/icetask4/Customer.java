@@ -26,7 +26,15 @@ public class Customer {
         this.points += 10;
         System.out.println("10 Points added");
     }
-
+// Checks if user has 50+ points to redeem [cite: 18, 19, 50]
+    public void redeemPoints() {
+        if (this.points >= 50) {
+            this.points -= 50;
+            System.out.println("Enjoy your free coffee!");
+        } else {
+            System.out.println("Insufficient Points");
+        }
+    }
    
 }
         
