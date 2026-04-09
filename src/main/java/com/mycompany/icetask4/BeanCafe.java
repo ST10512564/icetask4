@@ -23,4 +23,23 @@ public class BeanCafe {
             System.out.println("3. Check Balance");
             System.out.println("4. Exit");
             System.out.print("Enter choice: ");
+            choice = input.nextInt();
+
+            switch (choice) {
+                case 1 -> user.addPoints();
+                case 2 -> user.redeemPoints();
+                case 3 -> user.displayStatus();
+                case 4 -> { 
+                    System.out.println("Goodbye!");
+                    printBonusCalendar(31, 2); // Example: 31 days starting Tuesday [cite: 81-83]
+                }
+                default -> System.out.println("Invalid choice.");
+            }
+        }
+    }
+
+    private static void printBonusCalendar(int i, int i0) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 }
